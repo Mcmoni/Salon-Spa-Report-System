@@ -1,0 +1,44 @@
+{
+  "name": "winston-axios",
+  "version": "1.7.8",
+  "description": "An axios transport for winston which allows for sending REST requests to an external API",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node test/test.js",
+    "docs": "jsdoc2md docs/jsdoc.js > docs/jsdoc.md",
+    "deploy:test": "pnpm build && pnpm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aerilym/winston-axios.git"
+  },
+  "keywords": [
+    "winston",
+    "axios",
+    "http",
+    "api",
+    "log"
+  ],
+  "author": "Ryan Miller <aerilymbiz@gmail.com> (https://github.com/Aerilym)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aerilym/winston-axios/issues"
+  },
+  "homepage": "https://github.com/Aerilym/winston-axios",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/node": "^18.7.8",
+    "express": "^4.19.2",
+    "jsdoc-to-markdown": "^7.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4",
+    "winston": "^3.14.1"
+  },
+  "dependencies": {
+    "axios": "^1.7.3",
+    "winston-transport": "^4.7.1"
+  },
+  "packageManager": "pnpm@9.5.0-beta.0+sha512.c2e60e7ed04e459591c982f2760cd8f7d1f48fe1ca4d46ccbbf8377df1eb2d077ace1e9d334b06250dddf23c03b4562858f77992b9a3bb4a93355aefd173df32"
+}
